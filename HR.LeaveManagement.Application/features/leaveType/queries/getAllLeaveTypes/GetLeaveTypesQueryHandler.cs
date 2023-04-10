@@ -1,0 +1,42 @@
+﻿using AutoMapper;
+using HR.LeaveManagement.Application.contracts.logging;
+using HR.LeaveManagement.Application.contracts.persistence;
+using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HR.LeaveManagement.Application.features.leaveType.queries.getAllLeaveTypes
+{
+    public class GetLeaveTypesQueryHandler : IRequestHandler<GetLeaveTypesQuery, List<LeaveTypeDto>>
+    {
+        private readonly IMapper _mapper;
+        private readonly ILeaveTypeRepository _leaveTypeRepository;
+        private readonly IAppLogger<GetLeaveTypesQueryHandler> _logger;
+
+        public GetLeaveTypesQueryHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository, IAppLogger<GetLeaveTypesQueryHandler> logger)
+        {
+            _mapper = mapper;
+            _leaveTypeRepository = leaveTypeRepository;
+            _logger = logger;
+        }
+
+        public async Task<List<LeaveTypeDto>> Handle(GetLeaveTypesQuery request, CancellationToken cancellationToken)
+        {
+            //Podemos crear una Feature completa usando este estilo y otra Feature usando el estilo de hector
+            //mezclando query y handler y no usando automapper
+
+            //query db
+            var leaveTypes = await _leaveTypeRepository.GetAsync();
+
+            //convert data objects to dto
+            var data = _mapper.Map<List<LeaveTypeDto>>(leaveTypes);
+
+            //return list of DTO
+            _logger.LogInformation("Leave types were retrieved successfully");
+            return data;
+        }
+    }
+}
