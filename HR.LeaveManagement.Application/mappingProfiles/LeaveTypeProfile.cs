@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using HR.LeaveManagement.Application.features.leaveType.commands.createLeaveType;
+using HR.LeaveManagement.Application.features.leaveType.commands.updateLeaveType;
 using HR.LeaveManagement.Application.features.leaveType.queries.getAllLeaveTypes;
 using HR.LeaveManagement.Application.features.leaveType.queries.GetLeaveTypeDetails;
 using HR.LeaveManagement.Domain;
@@ -16,6 +18,8 @@ namespace HR.LeaveManagement.Application.mappingProfiles
         {
             CreateMap<LeaveTypeDto, LeaveType>().ReverseMap();
             CreateMap<LeaveType, LeaveTypeDetailsDto>();
+            CreateMap<CreateLeaveTypeCommand, LeaveType>();
+            CreateMap<UpdateLeaveTypeCommand, LeaveType>();
         }
     }
 }
