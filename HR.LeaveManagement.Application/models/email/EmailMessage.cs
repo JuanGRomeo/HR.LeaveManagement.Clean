@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.models.email
+namespace HR.LeaveManagement.Application.Models.Email
 {
     public class EmailMessage
     {

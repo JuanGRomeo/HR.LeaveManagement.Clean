@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using FluentValidation;
-using HR.LeaveManagement.Application.contracts.persistence;
-using HR.LeaveManagement.Application.exceptions;
-using HR.LeaveManagement.Application.features.leaveAllocation.commands.CreateLeaveAllocation;
+using HR.LeaveManagement.Application.Contracts.Persistence;
+using HR.LeaveManagement.Application.Exceptions;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.CreateLeaveAllocation;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.features.leaveAllocation.commands.UpdateLeaveAllocation
+namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.UpdateLeaveAllocation
 {
     public class UpdateLeaveAllocationCommandHandler : IRequestHandler<UpdateLeaveAllocationCommand, Unit>
     {

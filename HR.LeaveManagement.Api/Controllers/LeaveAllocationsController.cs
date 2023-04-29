@@ -1,8 +1,8 @@
-﻿using HR.LeaveManagement.Application.features.leaveAllocation.commands.CreateLeaveAllocation;
-using HR.LeaveManagement.Application.features.leaveAllocation.commands.DeleteLeaveAllocation;
-using HR.LeaveManagement.Application.features.leaveAllocation.commands.UpdateLeaveAllocation;
-using HR.LeaveManagement.Application.features.leaveAllocation.queries.getLeaveAllocation;
-using HR.LeaveManagement.Application.features.leaveAllocation.queries.getLeaveAllocationDetails;
+﻿using HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.CreateLeaveAllocation;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.DeleteLeaveAllocation;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.UpdateLeaveAllocation;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.queries.getLeaveAllocation;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.queries.getLeaveAllocationDetails;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using HR.LeaveManagement.Application.contracts.persistence;
-using HR.LeaveManagement.Application.exceptions;
+using HR.LeaveManagement.Application.Contracts.Persistence;
+using HR.LeaveManagement.Application.Exceptions;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.features.leaveAllocation.commands.DeleteLeaveAllocation
+namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.DeleteLeaveAllocation
 {
     public class DeleteLeaveAllocationCommandHandler : IRequestHandler<DeleteLeaveAllocationCommand>
     {

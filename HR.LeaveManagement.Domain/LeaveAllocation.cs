@@ -1,4 +1,4 @@
-﻿using HR.LeaveManagement.Domain.common;
+﻿using HR.LeaveManagement.Domain.Common;
 
 namespace HR.LeaveManagement.Domain;
 

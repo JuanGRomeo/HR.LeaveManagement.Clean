@@ -1,12 +1,12 @@
 ﻿using FluentValidation;
-using HR.LeaveManagement.Application.contracts.persistence;
+using HR.LeaveManagement.Application.Contracts.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.features.leaveAllocation.commands.CreateLeaveAllocation
+namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.CreateLeaveAllocation
 {
     public class CreateLeaveAllocationCommandValidator : AbstractValidator<CreateLeaveAllocationCommand>
     {

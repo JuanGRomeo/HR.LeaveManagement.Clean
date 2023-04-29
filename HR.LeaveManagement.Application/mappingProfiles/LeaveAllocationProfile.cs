@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using HR.LeaveManagement.Application.features.leaveAllocation.commands.CreateLeaveAllocation;
-using HR.LeaveManagement.Application.features.leaveAllocation.commands.UpdateLeaveAllocation;
-using HR.LeaveManagement.Application.features.leaveAllocation.queries.getLeaveAllocation;
-using HR.LeaveManagement.Application.features.leaveAllocation.queries.getLeaveAllocationDetails;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.CreateLeaveAllocation;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.UpdateLeaveAllocation;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.queries.getLeaveAllocation;
+using HR.LeaveManagement.Application.Features.LeaveAllocation.queries.getLeaveAllocationDetails;
 using HR.LeaveManagement.Domain;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.mappingProfiles
+namespace HR.LeaveManagement.Application.MappingProfiles
 {
     public class LeaveAllocationProfile : Profile
     {

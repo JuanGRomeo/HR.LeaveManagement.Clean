@@ -1,4 +1,4 @@
-﻿using HR.LeaveManagement.Application.contracts.logging;
+﻿using HR.LeaveManagement.Application.Contracts.Logging;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;

@@ -1,5 +1,5 @@
 ﻿using HR.LeaveManagement.Domain;
-using HR.LeaveManagement.Domain.common;
+using HR.LeaveManagement.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

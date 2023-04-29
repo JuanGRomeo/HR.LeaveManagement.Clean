@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.contracts.logging
+namespace HR.LeaveManagement.Application.Contracts.Logging
 {
     public interface IAppLogger<T>
     {

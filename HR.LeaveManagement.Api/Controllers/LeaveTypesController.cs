@@ -1,8 +1,8 @@
-﻿using HR.LeaveManagement.Application.features.leaveType.commands.createLeaveType;
-using HR.LeaveManagement.Application.features.leaveType.commands.deleteLeaveType;
-using HR.LeaveManagement.Application.features.leaveType.commands.updateLeaveType;
-using HR.LeaveManagement.Application.features.leaveType.queries.getAllLeaveTypes;
-using HR.LeaveManagement.Application.features.leaveType.queries.GetLeaveTypeDetails;
+﻿using HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType;
+using HR.LeaveManagement.Application.Features.LeaveType.Commands.DeleteLeaveType;
+using HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeaveType;
+using HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes;
+using HR.LeaveManagement.Application.Features.LeaveType.Queries.GetLeaveTypeDetails;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

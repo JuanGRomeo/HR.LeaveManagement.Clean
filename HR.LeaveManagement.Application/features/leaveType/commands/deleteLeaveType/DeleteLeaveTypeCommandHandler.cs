@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using HR.LeaveManagement.Application.contracts.persistence;
-using HR.LeaveManagement.Application.exceptions;
-using HR.LeaveManagement.Application.features.leaveType.commands.updateLeaveType;
+using HR.LeaveManagement.Application.Contracts.Persistence;
+using HR.LeaveManagement.Application.Exceptions;
+using HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeaveType;
 using HR.LeaveManagement.Domain;
 using MediatR;
 using System;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.features.leaveType.commands.deleteLeaveType
+namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.DeleteLeaveType
 {
     public class DeleteLeaveTypeCommandHandler : IRequestHandler<DeleteLeaveTypeCommand, Unit>
     {
@@ -30,7 +30,7 @@ namespace HR.LeaveManagement.Application.features.leaveType.commands.deleteLeave
 
             //verify that record exists
             if (leaveTypeToDelete == null)
-                throw new NotFoundException(nameof(LeaveType), request.Id);
+                throw new NotFoundException(nameof(Domain.LeaveType), request.Id);
 
             //remove it from db
             await _leaveTypeRepository.DeleteAsync(leaveTypeToDelete);

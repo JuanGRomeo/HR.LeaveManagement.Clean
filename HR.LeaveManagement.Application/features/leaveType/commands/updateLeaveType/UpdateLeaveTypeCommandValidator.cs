@@ -1,13 +1,13 @@
-﻿using HR.LeaveManagement.Application.contracts.persistence;
+﻿using HR.LeaveManagement.Application.Contracts.Persistence;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HR.LeaveManagement.Application.features.leaveType.commands.createLeaveType;
+using HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType;
 
-namespace HR.LeaveManagement.Application.features.leaveType.commands.updateLeaveType
+namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeaveType
 {
     public class UpdateLeaveTypeCommandValidator : AbstractValidator<UpdateLeaveTypeCommand>
     {

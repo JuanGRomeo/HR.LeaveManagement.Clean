@@ -1,11 +1,11 @@
-﻿using HR.LeaveManagement.Application.features.leaveType.queries.getAllLeaveTypes;
+﻿using HR.LeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.features.leaveAllocation.queries.getLeaveAllocationDetails
+namespace HR.LeaveManagement.Application.Features.LeaveAllocation.queries.getLeaveAllocationDetails
 {
     public class LeaveAllocationDetailsDto
     {

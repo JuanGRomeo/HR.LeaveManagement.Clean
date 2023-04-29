@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using HR.LeaveManagement.Application.contracts.persistence;
-using HR.LeaveManagement.Application.exceptions;
+using HR.LeaveManagement.Application.Contracts.Persistence;
+using HR.LeaveManagement.Application.Exceptions;
 using HR.LeaveManagement.Domain;
 using MediatR;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HR.LeaveManagement.Application.features.leaveType.queries.GetLeaveTypeDetails
+namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetLeaveTypeDetails
 {
     /*     
       This file is using a different style than the one used by Trevoir Williams 
@@ -44,7 +44,7 @@ namespace HR.LeaveManagement.Application.features.leaveType.queries.GetLeaveType
 
             //verify that record exists
             if (leaveType == null)
-                throw new NotFoundException(nameof(LeaveType), request.Id);
+                throw new NotFoundException(nameof(Domain.LeaveType), request.Id);
 
             var data = _mapper.Map<LeaveTypeDetailsDto>(leaveType);
 
