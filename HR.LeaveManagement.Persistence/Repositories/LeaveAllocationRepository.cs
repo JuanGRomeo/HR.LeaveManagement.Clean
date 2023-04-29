@@ -24,7 +24,7 @@ namespace HR.LeaveManagement.Persistence.Repositories
                                                             && leaveAllocation.Period == period);
         }
 
-        public async Task<List<LeaveAllocation>> GetLeaveAllocationWithDetails()
+        public async Task<List<LeaveAllocation>> GetLeaveAllocationsWithDetails()
         {
             var leaveAllocations = await _context.LeaveAllocations
                 .Include(leaveAllocations => leaveAllocations.LeaveType)
